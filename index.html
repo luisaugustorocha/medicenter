@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" /> <!-- Padrão que aceita acentos e símbolos. -->
+		<meta name="viewport" content="width=device-width,user-scalable=0" /> <!-- Permite uma página responsiva, adptável ao tipo de dispositivo que estiver acessando o site. -->
+		<link rel="stylesheet" type="text/css" href="assets/css/template.css" /> <!-- Importação do arquivo CSS. -->
+
+		<script type="text/javascript">
+			window.onload = function(){
+				document.querySelector(".menuMobile").addEventListener("click", function(){
+					if(document.querySelector(".menu nav ul").style.display == 'flex'){
+						document.querySelector(".menu nav ul").style.display = 'none';
+					} else {
+						document.querySelector(".menu nav ul").style.display = 'flex';
+					}
+				});
+			};
+		</script>
+		<title>MediCenter</title /> <!-- Título da página. -->
+	</head>
+	<body>
+
+		<header> <!-- Cabeçalho do site. -->
+			<div class="container">
+				<div class="logo">
+					<a href="#"><img src="assets/images/logo.png"></a> <!-- Insere a logo do site. -->
+				</div>
+				<div class="menu">
+					<nav>
+						<div class="menuMobile">
+							<div class="mm_line">.</div>
+							<div class="mm_line">.</div>
+							<div class="mm_line">.</div>
+						</div>
+						<ul>
+							<li class="active"><a href="">Home</a></li>
+							<li><a href="">Serviços</a></li>
+							<li><a href="">Depoimentos</a></li>
+							<li><a href="">Contato</a></li>
+							<li><a href="">Quem Somos</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header> <!-- Fim do cabeçalho do site. -->
+
+		<!-- Seção de banner do site. -->
+		<section id="banner">
+			<div class="container column">
+				<div class="banner_headline"> <!-- Headline = Título -->
+					<h1>Sua saúde em 1º lugar.</h1> <!-- Título principal.-->
+					<h2>Medicenter é uma clínica especializada em atendimento 24 horas com os melhores profissionais atuantes no mercado.</h2> <!-- Frase secundária.-->
+				</div>
+				<div class="banner_options">
+					<div class="banner1">
+						<div class="banner_title">Casos de Emergência</div>
+						<div class="banner_desc">Se você precisar de atendimento urgente, conte conosco para melhor atendê-lo.</div>
+						<a href="#">Saiba mais</a>
+					</div>
+					<div class="banner2">
+						<div class="banner_title">Calendário de Médicos</div>
+						<div class="banner_desc">Acompanhe em tempo real os médicos plantonistas e seus respectivos horários durante o mês.</div>
+						<a href="#">Saiba mais</a>
+					</div>
+					<div class="banner3">
+						<div class="banner_title">Horário de Funcionamento</div>
+						<div class="banner_day">Segunda à Sexta<span>08:00 - 17:00</span></div> <!-- A tag <span> é um container genérico em linha. -->
+						<div class="banner_day">Sábado<span>09:30 - 17:30</span></div>
+						<div class="banner_day">Domingo<span>09:30 - 15:00</span></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Seção principal e seção lateral. -->
+		<section id="geral">
+			<div class="container">
+				<section>
+					<div class="widget">
+						<div class="widget_title">
+							<div class="widget_title_text">Últimas Notícias</div>
+							<div class="widget_title_bar"></div>
+						</div>	
+						<div class="widget_body flex">
+							
+							<article> <!-- Início da notícia. -->
+								<a href="#">
+									<!-- Div contendo a data e quantidade de comentários. -->
+									<div class="news_data">
+										<div class="news_posted_at">12 DEZ 13</div> <!-- Data do conteúdo. -->
+										<div class="news_coments">2</div> <!-- Comentários. -->
+									</div>
+									<div class="news_thumbnail"> <!-- Miniatura da imagem. -->
+										<img src="assets/images/dr.jpg" />
+									</div>
+									<div class="news_title"> <!-- Título da notícia. -->
+										Centro de ortopedia é inaugurado neste fim de semana em nossa clínica.
+									</div>
+									<div class="news_resume"> <!-- Resumo da notícia. -->
+										Depois de um longo período em busca de um time de profissionais que atendessem as necessidades da nossa clínica, de dedicação exclusiva, finalmente entrará em funcionamento o nosso centro de ortopedia.
+									</div>
+								</a>
+							</article> <!-- Fim da notícia. -->
+							
+							<article> <!-- Início da notícia. -->
+								<a href="#">
+									<!-- Div contendo a data e quantidade de comentários. -->
+									<div class="news_data">
+										<div class="news_posted_at">10 NOV 12</div> <!-- Data do conteúdo. -->
+										<div class="news_coments">2</div> <!-- Comentários. -->
+									</div>
+									<div class="news_thumbnail"> <!-- Miniatura da imagem. -->
+										<img src="assets/images/leitos.jpg" />
+									</div>
+									<div class="news_title"> <!-- Título da notícia. -->
+										Mais conforto para sua recuperação com nossos leitos.
+									</div>
+									<div class="news_resume"> <!-- Resumo da notícia. -->
+										Trabalhamos com equipamentos de última linha para melhor atendê-los e comodidade para acompanhantes.
+									</div>
+								</a>
+							</article> <!-- Fim da notícia. -->
+							
+							<article> <!-- Início da notícia. -->
+								<a href="#"> 
+									<!-- Div contendo a data e quantidade de comentários. -->
+									<div class="news_data">
+										<div class="news_posted_at">02 AGO 12</div> <!-- Data do conteúdo. -->
+										<div class="news_coments">2</div> <!-- Comentários. -->
+									</div>
+									<div class="news_thumbnail"> <!-- Miniatura da imagem. -->
+										<img src="assets/images/quiropraxia.jpg" />
+									</div>
+									<div class="news_title"> <!-- Título da notícia. -->
+										Entenda os benefícios da quiropraxia em sua vida.
+									</div>
+									<div class="news_resume"> <!-- Resumo da notícia. -->
+										A quiropraxia é uma profissão que se dedica ao diagnóstico, tratamento e prevenção das disfunções mecânicas no sistema neuromusculoesquelético e os efeitos dessas disfunções na função normal do sistema nervoso e na saúde geral.
+									</div>
+								</a>
+							</article> <!-- Fim da notícia. -->
+							
+							<article> <!-- Início da notícia. -->
+								<a href="#">
+									<!-- Div contendo a data e quantidade de comentários. -->
+									<div class="news_data">
+										<div class="news_posted_at">27 JUL 12</div> <!-- Data do conteúdo. -->
+										<div class="news_coments">2</div> <!-- Comentários. -->
+									</div>
+									<div class="news_thumbnail"> <!-- Miniatura da imagem. -->
+										<img src="assets/images/hidro-idoso.jpg" />
+									</div>
+									<div class="news_title"> <!-- Título da notícia. -->
+										Atividades exclusivas para a terceira idade.
+									</div>
+									<div class="news_resume"> <!-- Resumo da notícia. -->
+										Pensando no público da terceira idade, criamos um centro de natação para práticas de hidroginástica, além de um centro de convivência para idosos com gincanas, aulas de zumba e massagens terapêuticas.
+									</div>
+								</a>
+							</article> <!-- Fim da notícia. -->
+						</div>
+					</div>
+				</section>
+				<aside>
+					<div class="widget">
+						<div class="widget_title">
+							<div class="widget_title_text">Departamentos</div>
+							<div class="widget_title_bar"></div>
+							<div class="widget_body_quadrado">
+								<section class="dpt_left">
+									<div></div>
+									<div></div>
+									<div></div>
+								</section>
+								<section class="dpt_right">
+									<div></div>
+									<div></div>
+									<div></div>
+								</section>
+							</div>
+							<div class="news_data">
+								<div class="news_posted_at">Cuidados de Saúde Primários<span>&#151;</span></div> <!-- Data do conteúdo. -->
+								<div class="news_coments"></div> <!-- Comentários. -->
+							</div>
+						</div>	
+						<div class="widget_body">
+							<div class="widget_collection">Pediatria<span class="symbol_more">&#43</span></div> <!-- A tag <span> é um container genérico em linha. -->
+							<div class="widget_collection">Cirurgia Ambulatorial<span class="symbol_more">&#43</span></div>
+							<div class="widget_collection">Ginecologista<span class="symbol_more">&#43</span></div>
+							<div class="widget_collection">Cardiologista<span class="symbol_more">&#43</span></div>
+							<!-- <div class="widget_collection">Laringologista<span class="symbol_more">&#43</span></div>
+							<div class="widget_collection">Oftalmologista<span class="symbol_more">&#43</span></div>
+							<div class="widget_collection">Dentista<span class="symbol_more">&#43</span></div>
+							<div class="widget_collection">Reabilitação<span class="symbol_more">&#43</span></div> -->
+						</div>
+					</div>
+					<div class="widget">
+						<div class="widget_title">
+							<div class="widget_title_text">Marque uma consulta</div>
+							<div class="widget_title_bar"></div>
+						</div>	
+						<div class="widget_body">
+							<div class="MA_Content">
+								<div class="MA_Content_Text">Pensando na sua comodidade, é possível agendar sua consulta de onde estiver. Faça o agendamento online de suas consultas.</div>
+								<div class="MA_Contact"><img src="assets/images/telefone.png" />Por telefone:
+									 +55 61 9999-9999</div>
+								<div class="MA_Contact"><img src="assets/images/email.png" />Por e-mail: medicenter@medicenter.com</div>
+								<div class="MA_Contact"><img src="assets/images/form.png" />Ou <a href=" "> preencher o formulário </a> na nossa página de contato.</div>
+							</div>
+						</div>
+					</div>
+				</aside>
+			</div>
+		</section>
+
+		<!-- Rodapé da página. -->
+		<footer>
+			<div class="container flexColumn">
+				<!-- Menu do rodapé. -->
+				<div class="footer_menu">
+					<div class="fm_1">
+						<div class="footer_title">Plano de Saúde</div>
+						<div class="footer_desc">Aqui na Medicenter temos planos individuais.</div>					
+					</div>
+					<div class="fm_2">
+						<div class="footer_title">Registros Médicos</div>
+						<div class="footer_desc">Consulte registros individuais dos pacientes.</div>
+					</div>
+					<div class="fm_3">
+						<div class="footer_title">Pagamento de Contas Online</div>
+						<div class="footer_desc">Oferecemos formas de pagamento online.</div>
+					</div>
+				</div>
+
+				<!-- Área do rodapé. -->
+				<div class="footer_area">
+					<!-- Início do Bloco. -->
+					<div class="footer_areaitem">
+						<div class="widget">
+							<div class="widget_title">
+								<div class="widget_title_text">Clínica Medicenter</div>
+								<div class="widget_title_bar"></div>
+							</div>	
+							<div class="widget_body">
+								<div class="medicenter_text">
+		                            Somos referência no ramo da saúde há 20 anos cujo foco principal é proporcionar comodidade e segurança aos pacientes que precisam dos nossos serviços.
+		                        </div>
+		                        <div class="medicenter_contact_title">
+		                            Clinica Medicenter
+		                        </div>
+		                        <div class="medicenter_cols">
+		                            <div>
+		                                Rua das Alamedas, nº 8921<br />
+		                                Brasília - DF<br />
+		                                Brasil
+		                            </div>
+		                            <div>
+		                                +55 61 9999-9999<br />
+		                                +55 61 9999-8888<br />
+		                                medicenter@medicenter.com
+		                            </div>
+		                        </div>
+		                        <div class="medicenter_icons">
+		                            <div class="medicenter_icons_space">
+	                            		<img src="assets/images/footer_facebook.png" />
+		                            </div>
+		                            <div class="medicenter_icons_space">
+		                                <img src="assets/images/footer_instagram.png" />
+		                            </div>
+		                            <div class="medicenter_icons_space">
+		                                <img src="assets/images/footer_email.png" />
+		                            </div>
+		                            <div class="medicenter_icons_space">
+		                                <img src="assets/images/footer_telefone.png" />
+		                            </div>
+		                        </div>
+							</div>
+						</div>					
+					</div>
+					<!-- Início do Bloco. -->
+					<div class="footer_areaitem">
+						<div class="widget">
+							<div class="widget_title">
+								<div class="widget_title_text">Últimas Postagens</div>
+								<div class="widget_title_bar"></div>
+							</div>	
+							<div class="widget_body">
+								<div class="lasted_post">
+		                            <div class="lasted_title">
+		                                <div class="flecha_title">
+		                                    <img src="assets/images/arrow_forward.png" />
+		                                </div>
+		                                <div>
+		                                    'Vacine seus filhos ou seja multado', diz ministro da saúde.
+		                                    <div class="lasted_post_date">1 hora atrás</div>
+		                                </div>
+		                            </div>
+		                        </div>
+		                        <div class="lasted_post">
+		                            <div class="lasted_title">
+		                                <div class="flecha_title">
+		                                    <img src="assets/images/arrow_forward.png" />
+		                                </div>
+		                                <div>
+		                                    Dia D da vacina contra gripe leva milhões aos postos de saúde.
+		                                    <div class="lasted_post_date">3 horas atrás</div>
+		                                </div>
+		                            </div>
+		                        </div>
+		                        <div class="lasted_post">
+		                            <div class="lasted_title">
+		                                <div class="flecha_title">
+		                                    <img src="assets/images/arrow_forward.png" />
+		                                </div>
+		                                <div>
+		                                    Estresse acelera a eclosão de cabelos brancos. Mitos e verdades.
+		                                    <div class="lasted_post_date">6 years ago</div>
+		                                </div>
+		                            </div>
+		                        </div>
+							</div>
+						</div>				
+					</div>
+					<!-- Início do Bloco. -->
+					<div class="footer_areaitem">
+						<div class="widget">
+							<div class="widget_title">
+								<div class="widget_title_text">Últimos Tweets</div>
+								<div class="widget_title_bar"></div>
+							</div>
+							<div class="widget_body">
+								<div class="lasted_tweet">
+		                            <div class="tweet_title">
+		                                <div class="flecha_title">
+		                                    <img src="assets/images/arrow_forward.png" />
+		                                </div>
+		                                <div>
+		                                    Hábitos saudáveis ajudam a prevenir a hipertensão. Saiba mais no Blog da Saúde http://www.blog.saude.gov.br/arwo7l
+		                                    <div class="lasted_tweet_date">1 hora atrás</div>
+		                                </div>
+		                            </div>
+		                        </div>
+		                        <div class="lasted_tweet">
+		                            <div class="tweet_title">
+		                                <div class="flecha_title">
+		                                    <img src="assets/images/arrow_forward.png" />
+		                                </div>
+		                                <div>
+		                                    Ministério da Saúde participa do Seminário Internacional sobre Grandes Acidentes do Trabalho. Confira! http://bit.ly/2V3S1r7 
+		                                    <div class="lasted_tweet_date">2 horas atrás</div>
+		                                </div>
+		                            </div>
+		                        </div>
+		                        <div class="lasted_tweet">
+		                            <div class="tweet_title">
+		                                <div class="flecha_title">
+		                                    <img src="assets/images/arrow_forward.png" />
+		                                </div>
+		                                <div>
+		                                    Neste sábado, dia 04 de maio, é dia de se proteger contra a gripe. Saiba quem deve se vacinar em http://saude.gov.br/vacinação  #VacinaBrasil
+		                                    <div class="lasted_tweet_date">4 horas atrás</div>
+		                                </div>
+		                            </div>
+		                        </div>
+    						</div>
+						</div>				
+					</div>
+				</div>
+
+				<!-- Área de Copyright. -->
+				<div class="footer_copy">
+					Copyrigth - Todos os direitos reservados.
+				</div>
+			</div>
+		</footer>
+
+	</body>
+</html>
